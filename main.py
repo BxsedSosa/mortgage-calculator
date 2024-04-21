@@ -102,8 +102,8 @@ def main():
     result = payment_calculation(loan_amount, loan_interest_rate, loan_duration)
     print(f'{prompt(MSG[language]['payment'])}{result}\n')
 
-clear()
 VALID_RETRY = ['y', 'yes']
+clear()
 welcome()
 language = valid_language()
 
