@@ -15,7 +15,7 @@
       "amount" : "Please enter a correct amount!\n==> Eample: 100000\n",
       "apr" : "Please enter a whole number for the APR!\n==> Example: 50\n",
       "duration" : "Please enter a whole number!\n==> Example: 5\n",
-      "retry": "Please only type:\n==> Yes or y\n==> No or n\n",
+      "retry": "Please only enter:\n==> Yes or y\n==> No or n\n",
       "not-number" : "That is not a number!"
     },
     "payment" : "Your monthly payment: $"
