@@ -6,7 +6,7 @@ from pyfiglet import Figlet
 
 USER_LANGUAGES = ['en', 'es']
 
-with open("text.json", "r") as f:
+with open("text.json", "r", encoding='utf-8') as f:
     MSG = json.load(f)
 
 def clear():
