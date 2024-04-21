@@ -100,7 +100,7 @@ def main():
     loan_interest_rate = annual_rate('apr')
     loan_duration = loan_dur('duration')
     result = payment_calculation(loan_amount, loan_interest_rate, loan_duration)
-    print(f'{prompt(MSG[language]['payment'])} {result}\n')
+    print(f'{prompt(MSG[language]['payment'])}{result}\n')
 
 clear()
 VALID_RETRY = ['y', 'yes']
