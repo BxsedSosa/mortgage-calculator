@@ -1,6 +1,6 @@
 # Mortgage Calc Thouhgts
 
-We determining from given information from user what their monthly payment will be with assumed interest that is compounding monthly
+We are determining from given information from user what their monthly payment will be with assumed interest that is compounding monthly
 
 3 user inputs that will be needed:
 - Loan Amount
@@ -25,4 +25,12 @@ m = p * (j / (1 - (1 + j) ** (-n)))
 Print monthly payments will 2 decimals: 
 - $123.45
 
+--- 
 
+Create everything within a function that returns a value
+
+### Loan Amount function
+1. takes 1 parameter called `text`
+2. create variable called `loan_amount` equal to `input`
+    - `input` arugment will be `prompt`function
+        - within the prompt argument we will enter `text` parameter
