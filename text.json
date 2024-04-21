@@ -18,7 +18,7 @@
       "retry": "Please only type:\n==> Yes or y\n==> No or n\n",
       "not-number" : "That is not a number!"
     },
-    "payment" : "Your monthly payment:"
+    "payment" : "Your monthly payment: $"
   },
   "es" : {
     "mortgage" : "Calculadora de hipoteca",
@@ -35,6 +35,6 @@
       "retry": "Por favor escriba únicamente:\n==> Sí o y\n==> No o n\n",
       "not-number" : "¡Ese no es un número!"
     },
-    "payment" : "Su pago mensual:"
+    "payment" : "Su pago mensual: $"
   }
 }

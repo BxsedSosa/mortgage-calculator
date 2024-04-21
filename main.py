@@ -64,8 +64,13 @@ def loan_dur(text):
     return float(loan_duration) * 12
 
 def payment_calculation(amount, interest, duration):
-    result = amount * (interest / (1 - (1 + interest) ** (-duration))) 
-    return round(result, 2)
+
+    if interest == 0:
+        result = amount / duration
+        return round(result, 2)
+    else:
+        result = amount * (interest / (1 - (1 + interest) ** (-duration))) 
+        return round(result, 2)
 
 def retry():
     answer = ['y', 'yes', 'n', 'no']
