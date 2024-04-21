@@ -1,4 +1,5 @@
 import os
+from pyfiglet import Figlet
 import json
 
 USER_LANGUAGES = ['en', 'es']
@@ -8,6 +9,16 @@ with open("text.json", "r") as f:
 
 def clear():
     os.system('clear')
+
+def welcome():
+    f = Figlet(font='slant')
+    print(f.renderText('Welcome'))
+    print('-----------------------------------------------')
+
+def mortgage_sign():
+    sign = Figlet(font='slant')
+    print(sign.renderText(MSG[language]['mortgage']))
+    print('-----------------------------------------------')
 
 def prompt(text):
     return f'{MSG['arrow']} {text}'
@@ -69,13 +80,17 @@ def main():
     LOAN_AMOUNT = loan_amnt('amount')
     LOAN_INTEREST_RATE = annual_rate('apr')
     LOAN_DURATION = loan_dur('duration')
-    print(payment_calculation(LOAN_AMOUNT, LOAN_INTEREST_RATE, LOAN_DURATION))
+    result = payment_calculation(LOAN_AMOUNT, LOAN_INTEREST_RATE, LOAN_DURATION)
+    print(f'{prompt(MSG[language]['payment'])} {result}\n')
 
+clear()
+VALID_RETRY = ['y', 'yes']
+welcome()
+language = valid_language()
 
 while True:
     clear()
-    language = valid_language()
-    VALID_RETRY = ['y', 'yes']
+    mortgage_sign()
     main()
 
     answer = retry()
