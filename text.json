@@ -4,14 +4,35 @@
   "en": {
     "welcome" : "Welcome to the Mortgage Calculator",
     "question": {
+      "select-lang": "Perferred language?\n==>'en' = English\n==>'es' = Espanol\n",
       "amount" : "What is the loan amount?:\n",
       "apr" : "What is the loan Annual Percentage Rate (APR)?:\n",
-      "duration" : "What is the loan duration (in years)?\n"
+      "duration" : "What is the loan duration (in years)?\n",
+      "retry" : "Type 'yes' (y) to continue\n==>Type 'no' (n) to exit\n"
     },
     "error" : {
-      "amount" : "Please enter a correct amount!\nEample: 100000\n",
-      "apr" : "Please enter a whole number for the APR!\nExample: 50\n",
-      "duration" : "Please enter a whole number!\nExample: 5\n"
+      "select-lang": "Please select only:\n==>'en' or 'es'\n",
+      "amount" : "Please enter a correct amount!\n==>Eample: 100000\n",
+      "apr" : "Please enter a whole number for the APR!\n==>Example: 50\n",
+      "duration" : "Please enter a whole number!\n==>Example: 5\n",
+      "retry": "Please only type:\n==>Yes or y\n==>No or n\n",
+      "not-number" : "That is not a number!"
+    }
+  },
+  "es" : {
+    "welcome" : "Bienvenido a la Calculadora de hipotecas",
+    "question": {
+      "amount" : "¿Cuál es el monto del préstamo?\n",
+      "apr" : "¿Cuál es la tasa de porcentaje anual (APR) del préstamo?\n",
+      "duration" : "¿Cuál es la duración del préstamo (en años)?\n",
+      "retry" : "Escribe 'sí' (y) para continuar\n==>Escribe 'no' (n) para salir\n"
+    },
+    "error" : {
+      "amount" : "¡Ingrese una cantidad correcta!\n==>Ejemplo: 100000\n",
+      "apr" : "¡Ingrese un número entero para la APR!\n==>Ejemplo: 50\n",
+      "duration" : "¡Ingrese un número entero!\n==>Ejemplo: 5\n",
+      "retry": "Por favor escriba únicamente:\n==>Sí o y\n==>No o n\n",
+      "not-number" : "¡Ese no es un número!"
     }
   }
 }
