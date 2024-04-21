@@ -1,11 +1,13 @@
 {
+  "arrow" : "==>",
+  
   "en": {
     "welcome" : "Welcome to the Mortgage Calculator",
-    "loan-amount" : "What is the loan amount?:\n",
-    "loan-apr" : "What is the loan Annual Percentage Rate (APR)?:\n",
-    "loan-duration" : "What is the loan duration (in years)?\n",
-    "error-amount" : "Please enter a correct amount!\nEample: 100000\n",
-    "error-apr" : "Please enter a whole number for the APR!\nExample: 50\n",
-    "error-duration" : "Please enter a whole number!\nExample: 5\n"
+    "loan-amount" : "What is the loan amount?:",
+    "loan-apr" : "What is the loan Annual Percentage Rate (APR)?:",
+    "loan-duration" : "What is the loan duration (in years)?",
+    "error-amount" : "Please enter a correct amount!\nEample: 100000",
+    "error-apr" : "Please enter a whole number for the APR!\nExample: 50",
+    "error-duration" : "Please enter a whole number!\nExample: 5"
   }
 }
