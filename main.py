@@ -61,17 +61,17 @@ def ask_user_number(text):
 
     return  user_number
 
-def loan_amnt(text):
+def ask_loan_amnt(text):
     '''Asking user for loan amount'''
     loan_amount = ask_user_number(text)
     return float(loan_amount)
 
-def annual_rate(text):
+def ask_annual_rate(text):
     '''Asking user for loan rate'''
     loan_apr = ask_user_number(text)
     return (float(loan_apr)* .01) / 12
 
-def loan_dur(text):
+def ask_loan_dur(text):
     '''Asking user for loan duration'''
     loan_duration = ask_user_number(text)
     return float(loan_duration) * 12
@@ -97,9 +97,9 @@ def ask_retry():
 
 def main():
     '''Main function'''
-    loan_amount = loan_amnt('amount')
-    loan_interest_rate = annual_rate('apr')
-    loan_duration = loan_dur('duration')
+    loan_amount = ask_loan_amnt('amount')
+    loan_interest_rate = ask_annual_rate('apr')
+    loan_duration = ask_loan_dur('duration')
     result = calculate_payment(loan_amount, loan_interest_rate, loan_duration)
     print(f'{prompt(MSG[language]['payment'])}{result}\n')
 
